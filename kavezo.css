@@ -1,0 +1,104 @@
+﻿body{
+	background-color:rgb(236,224,209);
+	font-family: 'Ubuntu', sans-serif;
+	color: rgb(97,72,68);
+}
+h1{
+	text-shadow:1px 1px #492710;
+		transition: all 5s;
+	transition-timing-function: linear;
+}
+h1:hover{
+	color:#db976d;
+	text-shadow:1px 1px #492710;
+	transition: all 2s;
+	transition-timing-function: linear;
+}
+
+td, th{
+	border: 1px solid #6d4022;
+	border-radius: 5px;
+	text-align:center;
+	padding:3px;
+}
+tr:hover {
+	background-color: #dbc1ac}
+
+ul {
+	list-style-image: url('CoffeeBeans.png');
+}
+table{
+	width:35%;
+	display:inline;
+	display:inline;
+	position: absolute;
+	
+}
+input{
+	font-family: 'Ubuntu', sans-serif;
+	background-color:rgb(133,87,56);
+	color:rgb(223,224,216);
+	border-color:rgb(199,158,151);
+	border-radius: 5px;
+	font-size:120%;
+	
+}
+.hiddenDiv{
+	visibility:hidden;
+}
+.sortingSpan{
+	visibility:visible;
+	display:inline;
+	width:350px;
+}
+#beans{
+	float:right;
+	width:250px;
+	border: 2px solid #6d4022;
+	border-style: dashed;
+}
+#cup{
+	float:left;
+	width:15%;
+	position:absolute;
+}
+#steam{
+	float:left;
+	width:15%; 
+	position:relative;
+	animation-name:steaming;
+	animation-duration:10s;
+	top:-450px;
+}
+#StarterCoffeeList{
+	margin:15px;
+	
+}
+#mainDiv{
+	margin:auto;
+	width:70%;
+	
+	
+}
+#divLowStock{
+	margin:15px 0;
+	background-color:#dbc1ac;
+
+}
+#divStrongness{
+	display:inline;
+	position: absolute;
+    right: 360px;
+}
+
+@keyframes steaming {
+	0%{
+		top:0;
+	}
+	1%{
+		top:2px;
+	}
+	100%{
+		top:-450px;
+	}
+}

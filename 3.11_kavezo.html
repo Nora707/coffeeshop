@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> </title>
+<link type="text/css" rel="stylesheet" href="kavezo.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300i" rel="stylesheet">
+</head>
+<body>
+<img src="beans.jpg" alt="beans" id="beans">
+
+<div id="mainDiv">
+	<h1> Coffee Shop<h1>
+	<h3>Kávébab különlegességek a világ minden tájáról</h3>
+	
+	<div>
+		<div id="StarterCoffeeList">
+			<h4>Forgalmazott kávé babjaink:</h4>
+			<span id="coffeeSpan"></span>
+		</div>
+
+		<span id="coffeeSpan"></span>
+		<input type="text" placeholder="kávé neve" id="searchBox">
+		<input type="button" value="Keresés" onclick="searchEngine()">
+		
+		<input type="button" value="Alacsony készletek megjelnítése" onclick="almostOutFunc()">
+		<input type="button" value="Erősség szerinti rendezés" onclick="sotrSrtongnessFunc()">
+		<hr>
+		
+		<div id="divLowStock">
+		</div>
+		
+		<table>
+			<thead>
+				<tr id="Headers"></tr>
+			</thead>
+			<tbody id="foundRow">
+			</tbody>
+		</table>
+	
+		<div id="divStrongness" class="hiddenDiv">
+			<span >
+				<h5>Gyenge kávék:</h5>
+					<ul id="weakUl">
+					</ul>
+			</span>
+			<span >
+				<h5>Közepes kávék:</h5>
+					<ul id="mildUl">
+					</ul>
+			</span>
+			<span >
+				<h5>Erős kávék:</h5>
+					<ul id="strongUl">
+					</ul>
+			</span>
+		</div>
+	</div>
+</div>
+<img src="steam3.png" alt="steam" id="steam">
+<img src="cup.png" alt="cup" id="cup">
+
+	<script type="text/javascript" src="kavezo.js">
+	</script>
+</body>
+</html>
