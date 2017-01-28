@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Coffee Shop </title>
+<link type="text/css" rel="stylesheet" href="kavezo-resp.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300i" rel="stylesheet">
+</head>
+<body>
+
+<img src="sidebeans.png" alt="beans" id="beans">
+ <img src="steam3.png" alt="steam" id="steam" class="float">
+<img src="cup.png" alt="cup" id="cup" class="float">
+
+
+<div id="sidebar" class="float">		
+	<div id="sideBtns" class="float">
+		<input type="button" onclick="Pricesfunc()" value="Áraink">
+		<input type="button" onclick="ValueFunc()" value="Admin">
+	</div>
+	<span id="pricesSpan"></span>
+	<span class="float">
+	<h3 id="allSum"></h3>
+	<ul id="valueSpan"></ul>
+	</span>
+	
+	
+	
+	
+</div>
+
+
+<div id="mainDiv">
+	<h1> Coffee Shop<h1>
+	<h3>Kávébab különlegességek a világ minden tájáról</h3>
+	
+	<div>
+		<div id="StarterCoffeeList">
+			<h4>Forgalmazott kávé babjaink:</h4>
+			<span id="coffeeSpan"></span>
+		</div>
+		<p></p>
+		<span id="coffeeSpan"></span>
+		<input type="text" placeholder="kávé neve" id="searchBox">
+		<input type="button" value="Keresés" onclick="searchEngine()">
+		<br>
+		<input type="button" value="Alacsony készletek megjelnítése" onclick="almostOutFunc()">
+		<input type="button" value="Erősség szerinti rendezés" onclick="sotrSrtongnessFunc()">
+		<input type="button" onclick="sortF()" value="Kávék ország szerint">
+		<hr>
+		
+		<div id="divLowStock">
+		</div>
+		
+			<table>
+				<thead>
+					<tr id="Headers"></tr>
+				</thead>
+				<tbody id="foundRow">
+				</tbody>
+			</table>
+			<div id="divStrongness" class="hiddenDiv">
+				<span >
+					<h4>Gyenge kávék:</h4>
+						<ul id="weakUl">
+						</ul>
+				</span>
+				<span >
+					<h4>Közepes kávék:</h4>
+						<ul id="mildUl">
+						</ul>
+				</span>
+					<span >
+					<h4>Erős kávék:</h4>
+						<ul id="strongUl">
+						</ul>
+				</span>
+			</div>
+		<span id="contsortedList"></span>
+		
+		
+
+	</div>
+</div>
+
+
+
+
+
+
+	<script type="text/javascript" src="kavezo.js">
+	</script>
+</body>
+</html>

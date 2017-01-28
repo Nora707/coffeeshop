@@ -1,0 +1,169 @@
+body{
+	background-color:rgb(236,224,209);
+	font-family: 'Ubuntu', sans-serif;
+	color: rgb(97,72,68);
+	/* border: 1px solid; */
+	min-height:400px;
+}
+h1{
+	text-shadow:1px 1px #492710;
+		transition: all 5s;
+	transition-timing-function: linear;
+	display:inline-block;
+	width:80%;
+}
+h1:hover{
+	color:#db976d;
+	text-shadow:1px 1px #492710;
+	transition: all 2s;
+	transition-timing-function: linear;
+}
+
+td, th{
+	border: 1px solid #6d4022;
+	border-radius: 5px;
+	text-align:center;
+	padding:3px;
+}
+tr:hover {
+	background-color: #dbc1ac
+}
+ul {
+	font-size:14px;
+	font-weight: bold;
+}
+table{
+	width:35%;
+}
+input{
+	font-family: 'Ubuntu', sans-serif;
+	background-color:rgb(133,87,56);
+	color:rgb(223,224,216);
+	border-color:rgb(199,158,151);
+	border-radius: 5px;
+	font-size:120%;
+	
+}
+input[type="button" i]:hover{
+	cursor:pointer;
+	transition:all 1s;
+	box-shadow: 1 1 8px;
+}
+.hiddenDiv{
+	visibility:hidden;
+}
+.sortingSpan{
+	visibility:visible;
+	/* display:inline; */
+	width:350px;
+}
+
+#divLowStock{
+	margin:15px 0;
+	background-color:#dbc1ac;
+
+}
+#contsortedList li{
+	font-size:14px;
+
+}
+#contsortedList ul{
+	border:solid;
+	list-style-image: url('CoffeeBeans.png');
+	font-size:16px;
+
+}
+#divStrongness{
+	list-style-image: url('CoffeeBeans.png');
+}
+
+#valueSpan{
+	list-style-image: url('coin.png');
+}
+#beans{
+	width:20%;
+	margin-left:79%;
+	display:inline-block;
+	float:right;
+	overflow:visible;
+	position:absolute;
+	
+}
+#sidebar{
+	width:20%;
+	display:inline-block;
+	/* border: solid 1px; */
+	position: static;
+	vertical-align:top;
+}
+#mainDiv{
+	width:60%;
+	display:inline-block;
+	/* border: solid 1px; */
+	
+}
+
+#cup{
+	width:20%;
+	margin-left:79%;
+	display:inline-block;
+	float:right;
+	overflow:visible;
+	position:absolute;
+	top:200px;
+}
+
+#steam{
+
+	animation-name:steaming;
+	animation-duration:10s;
+	width:20%;
+	margin-left:79%;
+	display:inline-block;
+	float:right;
+	overflow:visible;
+	position:absolute;
+}
+
+
+@keyframes steaming {
+	0%{
+		top:150;
+	}
+	1%{
+		top:200;
+	}
+	2%{
+		top:200px;
+	}
+	100%{
+		top:-450px;
+	}
+}
+@media screen and (max-width:640px){
+	#mainDiv{
+		width:100%;
+	}
+	#sidebar{
+		width:100%;
+	}
+	#beans{
+		max-width:40%;
+	}
+
+	*{
+	clear:both;
+	}
+}
+
+@media screen and (max-width:1000px){
+		#mainDiv{
+		width:100%;
+	}
+	#sidebar{
+		width:100%;
+	}
+	/* .float{
+		clear:right;
+	} */
+}
